@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: nim-proxy
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NVIDIA_API_KEY
+        sync: false
